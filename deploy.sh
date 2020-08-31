@@ -12,4 +12,6 @@ echo -n Password:
 read -s password
 echo
 
-lftp -e "mirror -R . jar" -u $username,$password $ip
+chmod -R 755 depo/
+
+lftp -e "mirror -R depo jar" -u $username,$password $ip
