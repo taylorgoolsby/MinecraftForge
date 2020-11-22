@@ -3,6 +3,8 @@
 **/.settings
 **/.classpath
 *.project
+/depo
+.DS_Store
 
 #In case people make their workspace in the repo
 /eclipse/
