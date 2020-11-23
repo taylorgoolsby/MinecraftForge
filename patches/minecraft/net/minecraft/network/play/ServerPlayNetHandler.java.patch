@@ -21,6 +21,19 @@
     }
  
     public void func_184339_a(CConfirmTeleportPacket p_184339_1_) {
+@@ -807,9 +809,9 @@
+                      if (!this.field_147369_b.func_184850_K() && (!this.field_147369_b.func_71121_q().func_82736_K().func_223586_b(GameRules.field_223615_r) || !this.field_147369_b.func_184613_cA())) {
+                         float f2 = this.field_147369_b.func_184613_cA() ? 300.0F : 100.0F;
+                         if (d11 - d10 > (double)(f2 * (float)i) && !this.func_217264_d()) {
+-                           field_147370_c.warn("{} moved too quickly! {},{},{}", this.field_147369_b.func_200200_C_().getString(), d7, d8, d9);
+-                           this.func_147364_a(this.field_147369_b.func_226277_ct_(), this.field_147369_b.func_226278_cu_(), this.field_147369_b.func_226281_cx_(), this.field_147369_b.field_70177_z, this.field_147369_b.field_70125_A);
+-                           return;
++                           field_147370_c.warn("{} moved too quickly! But we are ignoring this! {},{},{}", this.field_147369_b.func_200200_C_().getString(), d7, d8, d9);
++//                           this.setPlayerLocation(this.player.getPosX(), this.player.getPosY(), this.player.getPosZ(), this.player.rotationYaw, this.player.rotationPitch);
++//                           return;
+                         }
+                      }
+ 
 @@ -950,7 +952,9 @@
        Direction direction = blockraytraceresult.func_216354_b();
        this.field_147369_b.func_143004_u();
